@@ -1,0 +1,306 @@
+
+html,body,header{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a,p{
+    color:#303030;
+}
+/* image + logo */
+
+header{
+    background:url("../img/splash.jpg") center/cover;
+    position: relative;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.25);
+    
+}
+
+.boitelog{
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    text-align: center;
+    z-index: 1;
+}
+
+.boitelog img{
+    display: block;
+}
+
+.find{
+    color: aliceblue;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 50px;
+    transition: .3s all ease-in-out;
+}
+
+.find:hover{
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+/* nav */
+
+.main-nav{
+    text-align: center;
+    border-bottom: 2px solid #303030;
+    padding: 25px 0;
+    margin-bottom: 40px;
+}
+
+.main-nav a{
+    position: relative;
+    margin:0px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: .3s all ease-in-out;
+    vertical-align: middle;
+    border-bottom: 2px dotted transparent;
+}
+
+.logonav{
+    vertical-align: middle;
+}
+
+.main-nav a:hover{
+    border-bottom: 2px dotted #303030;
+}
+
+.main-nav a:nth-of-type(4) {
+    border-bottom: none;
+}
+
+/* featured products */
+
+main{
+    text-align:center;
+    width:940px;
+    margin: 0 auto;
+}
+
+.titre{
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* produits rules */
+
+.featured{
+    background-color: #E8E8E8;
+    padding: 5px;
+}
+
+.italique {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: -10px;
+    letter-spacing: 2px;
+    color:#000;
+}
+
+.trio div{
+    display: inline-block;
+}
+
+.trio div a img{
+    width:300px;
+    margin: 40px 5px 0px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+.prix{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.trio{
+    margin-bottom: 20px;
+}
+
+/* bandeau new products */
+
+.bandeau{
+    width: 940px;
+    margin:0 auto;
+}
+
+.shop {
+    text-align: left;
+    height: 63px;
+    line-height:63px;
+    background:url('../img/bar-promo.jpg');
+    font-size: 19px;
+}
+.shop a {
+    float:right;
+}
+
+.shop-all,.learn{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/* section story rules */
+
+.story{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ostory+p{
+    padding: 30px 260px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.imformu{
+    position: relative;
+    background: url(../img/image-04.jpg)no-repeat;
+    height: 565px;
+    margin-bottom: 40px;
+}
+
+.formulaire{
+    position: absolute;
+    background: #fff;
+    width:330px;
+    height:180px;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    text-align: center;
+}
+
+.formulaire::before{
+    content:"";
+    width: 315px;
+    height: 165px;
+    border:2px solid #303030;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    /* top: 5px;
+    left:5px;
+    right:5px;
+    bottom:5px; */
+    z-index: -1;
+}
+
+/* bandeau bas */
+
+footer{
+    width:940px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    height: 152px;
+    background:url('../img/bar-footer.jpg');
+}
+
+.footer-contact > div{
+    float: left;
+    width:calc(100%/3);
+}
+
+.footer-contact h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.footer-contact::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.connect a{
+    background-image:url('../img/icons-social.jpg');
+    height: 22px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.facebook{
+    width: 12px;
+}
+
+.instagram{
+    width: 21px;
+    background-position: -12px;
+}
+
+/* footer infos */
+
+.footer-nav{
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 40px;
+}
+
+.footer-nav a{
+    position: relative;
+    margin:0px 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-bottom: 2px dotted transparent;
+}
+
+.logo-holly{
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+small{
+    display: inline;
+    text-transform: uppercase;
+}
+
+.footer-nav a+a::before{
+    content: "•";
+}
+
+.footer-nav a+a::after{
+    content:'';
+    display: block;
+    clear:both;
+}
